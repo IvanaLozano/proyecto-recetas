@@ -1,0 +1,37 @@
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  
+  }
+
+  .button-group .btn {
+    background-color: #1e905b; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .button-group .btn:hover {
+    background-color: #2f8960; /* Color de fondo de los botones al pasar el ratón */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+ 
+  .custom-card {
+    width: 400px;
+    background-color: #ddf5dd; /* Color de fondo de las cajas */
+    border: 1px solid #1e905b; /* Color del borde de las cajas */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card p {
+    color: #333; /* Color del texto dentro de las cajas */
+  }
+  

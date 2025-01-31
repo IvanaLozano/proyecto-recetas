@@ -1,0 +1,33 @@
+.encabezado-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+  }
+  
+  .rubik-doodle-triangles-regular {
+    font-family: "Rubik Doodle Triangles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .encabezado-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+  }
+  
+  .encabezado {
+    margin: 10px 0;
+    color: #1e905b;
+    text-align: left; /* Alinea el texto a la izquierda */
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+  
+}
