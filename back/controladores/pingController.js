@@ -1,6 +1,5 @@
 const connection = require('../db/db')
 
-
 //obtener las recetas
 module.exports.recetas = (req, res) =>{
     const consult = 'SELECT * FROM recetas';
