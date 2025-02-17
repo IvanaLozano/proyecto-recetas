@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
 import '../estilos/cart.css';

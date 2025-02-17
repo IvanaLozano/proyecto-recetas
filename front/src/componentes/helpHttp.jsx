@@ -57,3 +57,19 @@ export const helpHttp = () =>{
         del,
     };
 }
+
+
+
+// import { helpHttp } from './helpHttp';
+
+// const api = helpHttp();
+
+// api.get('http://localhost:3000/recetas')
+//   .then((data) => console.log(data))
+//   .catch((err) => console.error(err));
+
+// api.post('http://localhost:3000/recetas', {
+//   body: { nombre: 'Nueva Receta', ingredientes: '...', receta: '...' }
+// })
+//   .then((data) => console.log(data))
+//   .catch((err) => console.error(err));

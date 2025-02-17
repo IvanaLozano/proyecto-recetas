@@ -3,18 +3,15 @@
 const express = require('express');
 const router = express.Router();
 
+// Importar controladores
 const { recetas, crearReceta } = require('../controladores/pingController');
+const { login } = require('../controladores/loginController');
 
-const {login} = require('../controladores/loginController')
-
-// Define la ruta /ping
+// Rutas para recetas
 router.get('/recetas', recetas);
+router.post('/recetas', crearReceta);
 
-router.post('/recetas',crearReceta);
-
-
-router.post('/login', login)
-
-
+// Ruta para login
+router.post('/login', login);
 
 module.exports = router;

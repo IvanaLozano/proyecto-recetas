@@ -1,35 +1,35 @@
-const connection = require('../db/db')
-const jwt = require('jsonwebtoken')
+const fs = require('fs');
+const path = require('path');
 
-module.exports.login = (req, res) =>{
-    const {usuario, contra} = req.body;
-    console.log(usuario);
-    console.log(contra);
+const usuariosFilePath = path.join(__dirname, '../data/usuarios.json');
 
-    //validación de la base de datos
-    const consult = 'SELECT * FROM login WHERE usuario = ? AND contra = ?';
+// Función para leer el archivo JSON
+function readJSONFile(filePath) {
+    const data = fs.readFileSync(filePath);
+    return JSON.parse(data);
+}
+
+// Obtener todos los usuarios
+module.exports.recetas = (req, res) => {
+    try {
+        const usuarios = readJSONFile(usuariosFilePath);
+        res.json(usuarios);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+};
+
+// Crear un nuevo usuario
+module.exports.crearReceta = (req, res) => {
+    const newUsuario = req.body;
 
     try {
-        connection.query(consult, [usuario, contra], (err, result) =>{
-            if(err){
-                res.send(err);
-            }
+        let usuarios = readJSONFile(usuariosFilePath);
+        usuarios.push(newUsuario);
 
-            if(result.length > 0){
-                const token = jwt.sign ({usuario}, "stack", {
-                expiresIn: '5m'
-            });
-
-                // console.log(result);
-                res.send({token});
-
-            }else{
-                console.log("worng user");
-                res.send({message: "wrong user"})
-            }
-        })
+        fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, 2));
+        res.status(201).send(newUsuario);
     } catch (error) {
-        
+        res.status(500).send(error);
     }
-    
-}
+};

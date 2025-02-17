@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "password": "pass1",
+            "token": "tokenEjemplo"
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "pass2",
+            "token": "tokenEjemplo2"
+        },
+        {
+            "id": 3,
+            "username": "ivana",
+            "password": "lozano",
+            "token": "tokenEjemplo3"
+        }
+    ]
+}

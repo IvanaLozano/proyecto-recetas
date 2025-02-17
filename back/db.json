@@ -1,0 +1,44 @@
+{
+  "recetas": [
+    {
+      "id": "1",
+      "nombre": "Tacos",
+      "ingredientes": "Tortilla, Carne",
+      "receta": "Cocinar carne...",
+      "idCategoria": 1,
+      "imagen": "tacos.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Ensalada",
+      "ingredientes": "Lechuga, Tomate",
+      "receta": "Mezclar todo...",
+      "idCategoria": 2,
+      "imagen": "ensalada.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Tostadas de Aguacate y Huevo",
+      "ingredientes": "2 rebanadas de pan integral, 1 aguacate maduro, 2 huevos, Sal y pimienta al gusto, Aceite de oliva",
+      "receta": "Tuesta las rebanadas de pan. Machaca el aguacate y úntalo sobre las tostadas. Cocina los huevos al gusto (pochados, revueltos o fritos). Coloca los huevos sobre las tostadas con aguacate. Añade sal, pimienta y un chorrito de aceite de oliva.",
+      "idCategoria": 2,
+      "imagen": "imagen3.jfif"
+    },
+    {
+      "id": "4",
+      "nombre": "Yogur con Frutas y Granola",
+      "ingredientes": "200 g de yogur natural, 1 plátano, 1 puñado de fresas, 1 puñado de arándanos, 2 cucharadas de granola, Miel al gusto",
+      "receta": "Coloca el yogur en un bol. Corta el plátano y las fresas en rodajas. Añade las frutas y la granola sobre el yogur. Rocía con miel al gusto.",
+      "idCategoria": 2,
+      "imagen": "imagen4.jfif"
+    },
+    {
+      "id": "fa4b",
+      "nombre": "2",
+      "ingredientes": "2",
+      "receta": "2",
+      "idCategoria": "2",
+      "imagen": "1"
+    }
+  ]
+}
